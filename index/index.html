@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/css/multi-select-tag.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Cookbook</a>
+            </div>
+            <ul class="sections">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#wine">Wine</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+            <a href="#" class="login">Log in</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#wine">Wine</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#" class="login">Log in</a></li>
+        </div>
+    </header>
+
+    <!-- Main content -->
+
+    <!-- Home -->
+
+    <br>
+    
+    <div class="container">
+        <div class="sections_box">
+            <div class="home" id="home">
+                <div class="slider">
+                    <img id="slide-1" src="media/anshu-a--7LeAsLS0FA-unsplash.png"/>
+                </div>
+                <div class="food_quote">
+                    "There is no sincerer love than the love of food." - Unknown
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+
+    <!-- search -->
+     
+    <div class="container">
+        <div class="sections_box">
+            <div class="search" id="search">
+                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <form class="search_forms" id="search_id" method="get">
+                    <div class="sections_text">
+                        <h2 id="search">Search by</h2>
+                    </div>
+                    <label class="search_labels">dish name:</label>
+                    <input name="dish_name" id="dish_name" type="text" class="search_inputs" placeholder="pizza" value=""><br>
+
+                    <label class="search_labels">cuisine:</label>
+                    <select name="cuisine" class="search_select" id="cuisine" multiple>
+                        <option value="">Any</option>
+                        <option value="African">African</option>
+                        <option value="Asian">Asian</option>
+                        <option value="American">American</option>
+                        <option value="British">British</option>
+                        <option value="Cajun">Cajun</option>
+                        <option value="Caribbean">Caribbean</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Eastern European">Eastern European</option>
+                        <option value="European">European</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Greek">Greek</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Irish">Irish</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Jewish">Jewish</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Latin American">Latin American</option>
+                        <option value="Mediterranean">Mediterranean</option>
+                        <option value="Mexican">Mexican</option>
+                        <option value="Middle Eastern">Middle Eastern</option>
+                        <option value="Nordic">Nordic</option>
+                        <option value="Southern">Southern</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Thai">Thai</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                    </select><br>
+
+                    <label class="search_labels">exclude cuisine:</label>
+                    <select name="exc_cuisine" class="search_select" id="exc_cuisine" multiple>
+                        <option value="">None</option>
+                        <option value="African">African</option>
+                        <option value="Asian">Asian</option>
+                        <option value="American">American</option>
+                        <option value="British">British</option>
+                        <option value="Cajun">Cajun</option>
+                        <option value="Caribbean">Caribbean</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Eastern European">Eastern European</option>
+                        <option value="European">European</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Greek">Greek</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Irish">Irish</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Jewish">Jewish</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Latin American">Latin American</option>
+                        <option value="Mediterranean">Mediterranean</option>
+                        <option value="Mexican">Mexican</option>
+                        <option value="Middle Eastern">Middle Eastern</option>
+                        <option value="Nordic">Nordic</option>
+                        <option value="Southern">Southern</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Thai">Thai</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                    </select><br>
+                
+                    <label class="search_labels">diet:</label>
+                    <select name="diet" class="search_select" id="diet" multiple>
+                        <option value="">Any</option>
+                        <option value="Gluten Free">Gluten Free</option>
+                        <option value="Ketogenic">Ketogenic</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Lacto-Vegetarian">Lacto-Vegetarian</option>
+                        <option value="Ovo-Vegetarian">Ovo-Vegetarian</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Pescetarian">Pescetarian</option>
+                        <option value="Paleo">Paleo</option>
+                        <option value="Primal">Primal</option>
+                        <option value="Low FODMAP">Low FODMAP</option>
+                        <option value="Whole30">Whole30</option>
+                    </select><br>
+                    
+                    <label class="search_labels">intolerances:</label>
+                    <select name="intolerances" class="search_select" id="intolerances" multiple>
+                        <option value="">None</option>
+                        <option value="Dairy">Dairy</option>
+                        <option value="Egg">Egg</option>
+                        <option value="Gluten">Gluten</option>
+                        <option value="Grain">Grain</option>
+                        <option value="Peanut">Peanut</option>
+                        <option value="Seafood">Seafood</option>
+                        <option value="Sesame">Sesame</option>
+                        <option value="Shellfish">Shellfish</option>
+                        <option value="Soy">Soy</option>
+                        <option value="Sulfite">Sulfite</option>
+                        <option value="Tree Nut">Tree Nut</option>
+                        <option value="Wheat">Wheat</option>
+                    </select><br>
+                    
+                    <label class="search_labels">meal type:</label>
+                    <select name="meal_type" class="search_select" id="meal_type" multiple>
+                        <option value="">Any</option>
+                        <option value="main course">Main Course</option>
+                        <option value="side dish">Side Dish</option>
+                        <option value="dessert">Dessert</option>
+                        <option value="appetizer">Appetizer</option>
+                        <option value="salad">Salad</option>
+                        <option value="bread">Bread</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="soup">Soup</option>
+                        <option value="beverage">Beverage</option>
+                        <option value="sauce">Sauce</option>
+                        <option value="marinade">Marinade</option>
+                        <option value="fingerfood">Fingerfood</option>
+                        <option value="snack">Snack</option>
+                        <option value="drink">Drink</option>
+                    </select><br> 
+
+                    
+                    <label class="search_labels">ingredients included:</label>
+                    <input name="inc_ingredients" id="inc_ingredients" type="text" class="search_inputs" placeholder="cheese" value="">
+
+                    <label class="search_labels">ingredients exluded:</label>
+                    <input name="exc_ingredients" id="exc_ingredients" type="text" class="search_inputs" placeholder="pineapples" value=""><br>
+
+                    <label class="search_labels">min calories:</label>
+                    <input name="min_cal" id="min_cal" type="text" class="search_inputs" placeholder="300" value="0">
+
+                    <label class="search_labels">max calories:</label>
+                    <input name="max_cal" id="max_cal" type="text" class="search_inputs" placeholder="800" value="5000"><br><br>
+
+                    <button type="submit" class="recipe_search_button">Search</button><br>
+                </form>
+
+                <img src="" id="food_img" style="display: none;">  
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- wine -->
+    <div class="container" id="wine_container">
+        <div class="sections_box" id="wine_section">
+            <form id="wine_form">
+                <div class="wine_text"><h2 id="wine" class="for_wine">Enhance your food with the perfect wine</h2></div>
+                <label class="wine_labels">Dish:</label>
+                <input class="wine_inputs" type="text" id="dishInput" placeholder="e.g., steak">
+                <button class="wine_button" id="findDishBtn" type="submit">Find</button><br>
+            </form>
+            <div id="wine_results"></div>
+        </div>
+    </div>
+      
+    <br><br>
+    
+    <!-- contact us -->
+    <div class="container">
+        <div class="sections_box" id="contact_box">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact_forms">
+                <div class="sections_text">
+                    <h2 id="contact">Contact Us</h2>
+                </div>
+                <input type="hidden" name="access_key" value="a8de0aea-0798-4951-89d2-1f3c06137cf0">
+                <input type="text" name="name" placeholder="Name" class="contact_inputs" required>
+                <input type="email" name="email" placeholder="Email" class="contact_inputs" required>
+                <button type="submit" class="email_submit" id="email_submit">Submit</button><br>
+                <textarea name="message" class="contact_inputs" id="textarea_contact" placeholder="Questions, bug reports, suggestions or any feedback is welcome!"></textarea><br>
+            </form>
+        </div>
+    </div>
+    <br>
+
+    <!--Login window-->
+    <div class="popup">
+        <div class="popup_scale">
+            <div class="login_box">
+                <div class="exit_popup"><i class="fa-solid fa-xmark" style="color: #9f023c;"></i></div>
+                <div class="formbox_login">
+                    <div class="only_login">
+                        <h2>Log in</h2>
+                        <form action="#">
+                            <div class="login_input" id="email">
+                                <label>Email:</label>
+                                <input type="email" placeholder="id@host">
+                                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            </div>
+                            <div class="login_input" id="password_login">
+                                <label>Password:</label>
+                                <input class="hidden_password" type="password" placeholder="12345678">
+                                <span class="icon" id="eye_icon_login" onclick="see_password(0, this)"><i class="fa-solid fa-eye-slash"></i></span>
+                            </div>
+
+                            <div class="password_memory">
+                                <label><input type="checkbox" class="ch_ckbox"> Remember me</label>
+                                <a href="#">Forgot my password</a>
+                            </div>
+
+                            <button type="submit" class="login_button">Log in</button>
+                                
+                            <div class="signin_link">
+                                <p>Don't have an account? <a href="#">Join now</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="formbox_signin">
+                    <div class="only_signin">
+                        <h2>Sign in</h2>
+                        <form>
+                            <div class="signin_input" id="name">
+                                <label>Username:</label>
+                                <input type="text" placeholder="Jane Doe">
+                                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            </div>
+                            <div class="signin_input" id="email">
+                                <label>Email:</label>
+                                <input type="email" placeholder="id@host">
+                                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            </div>
+                            <div class="signin_input" id="password_signin">
+                                <label>Password:</label>
+                                <input class="hidden_password" type="password" placeholder="12345678">
+                                <span class="icon" id="eye_icon_signin" onclick="see_password(1, this)"; "change_eye_icon(this)"><i class="fa-solid fa-eye-slash"></i></span>
+                            </div>
+                            <div class="signin_input" id="password_hint">
+                                <label>Password hint:</label>
+                                <input type="text" placeholder="ex) sequence of numbers">
+                                <span class="icon"><i class="fa-solid fa-lightbulb"></i></span>
+                            </div>
+
+                            <button type="button" class="next_signin_button">Next</button>
+
+                            <div class="login_link">
+                                <p>Already have an account? <a href="#">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+        </div>  
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/js/multi-select-tag.js"></script>
+    <script>
+        new MultiSelectTag('cuisine')  
+        new MultiSelectTag('exc_cuisine')
+        new MultiSelectTag('diet')
+        new MultiSelectTag('intolerances')
+        new MultiSelectTag('meal_type')
+    </script>
+</body>
+</html>
