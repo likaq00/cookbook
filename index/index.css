@@ -202,9 +202,9 @@ header{
 .search_icon{
     position: absolute;
     color: #9f023c;
-    bottom: 200px;
-    right: 200px;
-    font-size: 20rem;
+    bottom: 110px;
+    right: 210px;
+    font-size: 15rem;
 }
 
 .search_inputs{
@@ -237,13 +237,6 @@ header{
     color: #9f023c;
 }
 
-
-.search_inputs#inc_ingredients{
-    width: 317px;
-}
-.search_inputs#exc_ingredients{
-    width: 322px;
-}
 .search_inputs#min_cal{
     width: 386px;
 }

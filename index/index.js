@@ -95,12 +95,8 @@ async function fetch_data(event) {
     
     const dishName = document.getElementById('dish_name').value;
     const cuisines = Array.from(document.getElementById('cuisine').selectedOptions).map(option => option.value).join(',');
-    const excludeCuisines = Array.from(document.getElementById('exc_cuisine').selectedOptions).map(option => option.value).join(',');
     const diets = Array.from(document.getElementById('diet').selectedOptions).map(option => option.value).join(',');
     const intolerances = Array.from(document.getElementById('intolerances').selectedOptions).map(option => option.value).join(',');
-    const mealTypes = Array.from(document.getElementById('meal_type').selectedOptions).map(option => option.value).join(',');
-    const includeIngredients = document.getElementById('inc_ingredients').value;
-    const excludeIngredients = document.getElementById('exc_ingredients').value;
     const minCalories = document.getElementById('min_cal').value;
     const maxCalories = document.getElementById('max_cal').value;
 
@@ -108,7 +104,7 @@ async function fetch_data(event) {
 
 
     try {
-        const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${dishName}&intolerances=${intolerances}&apiKey=${apiKey}`);
+        const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${dishName}&cuisine=${cuisines}&diet=${diets}&intolerances=${intolerances}&minCalories=${minCalories}&maxCalories=${maxCalories}&apiKey=${apiKey}`);
         if (!response.ok) {
             throw new Error("Could not fetch resource");
         }
